@@ -2,11 +2,16 @@
 
 ## Wayback machine to view old files in Web archive
 ```
+Web:
 https://web.archive.org/cdx/search/cdx?url=*.domain.com&fl=original&collapse=urlkey
+
+Using CURL
+$ curl -v -X POST 'https://web.archive.org/cdx/search/cdx?url=*.domain.com&fl=original&collapse=urlkey' | grep "http" | tee OutputWeb.txt
 ```
 ## Use Waybackurls by tomnomnom:
 ```
 $ waybackurls domain.com
+$
 ```
 ## Use Knock Subdomain Scan:
 ```
