@@ -61,7 +61,19 @@ $ python EyeWitness.py -f finalsubdomain.txt
 ```
 ## Google Dorks:
 ```
-(Will Soon...!)
+- site: “domain.com” + “domain” + password
+- site:target.com filetype:php
+- site:target.com filetype:aspx
+- site:target.com filetype:swf (Shockwave Flash)
+- site:target.com filetype:wsdl
+- site: target.com inurl:.php?id=
+- site: target.com inurl:.php?user=
+- site: target.com inurl:.php?book=
+- site: target.com inurl:login.php
+- site: target.com intext: “login”
+- site: target.com inurl:portal.php
+- site: target.com inurl:register.php
+-site: target.com intext: “index of /”
 ```
 ## Shodan:
 ```
@@ -94,11 +106,22 @@ $ dirb
 $ gobuster
 $ dirbuster
 ```
-##
-
-##
-##
-
+## LinkFinder:(https://github.com/GerbenJavado/LinkFinder)
+LinkFinder is a python script written to discover endpoints and their parameters in java Scripts files.
+```
+$ python linkfinder.py -i https://domain.com -o cli
+```
+## TiDos: (https://github.com/0xInfection/TIDoS-Framework)
+TiDos is an offensive web application framework with lots of modules.It helps in many penetration testing task from performing recon to attacking a web application.
+```
+$ python tidos.py
+```
+Reference: https://www.youtube.com/watch?v=5a_GFWeovYI
+## Photon: (https://github.com/s0md3v/Photon)
+Photon is basically a data extraction tool which helps us find many useful information from the websites.
+```
+$ python3 photon.py -u domain.com — keys — dns
+```
 ## References:
 https://medium.com/@theUnixe/recon-for-web-pen-testing-6a6333673818
 
