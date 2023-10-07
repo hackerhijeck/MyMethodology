@@ -10,8 +10,11 @@ $ curl -v -X POST 'https://web.archive.org/cdx/search/cdx?url=*.domain.com&fl=or
 ```
 ## Use Waybackurls by tomnomnom:
 ```
-$ waybackurls domain.com
-$
+$ waybackurls domain.com | tee waybackurls.txt
+$ cat waybackurls.txt | grep "=" | bhedak "" | tee endpointurls.txt
+$ cat waybackurls.txt | grep "file=" | tee LFI_endpoint.txt
+$ cat waybackurls.txt | grep "filepath=" | tee LFI_endpoint.txt
+$ cat waybackurls.txt | grep "file-path=" | tee LFI_endpoint.txt
 ```
 ## Use Knock Subdomain Scan:
 ```
@@ -27,7 +30,7 @@ $ assetfinder -subs-only domain.com
 ```
 ## Use Sublist3r for subdomain scan:
 ```
-$ python sublis3r.py -d domain.com -p 80 443
+$ python sublist3r.py -d domain.com -p 80 443
 ```
 ### After complete Subfinder+Assetfinder+Sublist3r:
 All the output subdomains list to compress with a one final subdomain list.
