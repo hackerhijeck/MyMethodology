@@ -21,4 +21,4 @@ https://www.virustotal.com
 ### Take subdomains from Crt.sh, Shodan.io, Virus Total and make a file and Remove the duplicates Subdomains:
 ```
 $ sort -u domain_list.txt -o domain_list.txt
-``
+```
