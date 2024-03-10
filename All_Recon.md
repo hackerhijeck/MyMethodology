@@ -25,3 +25,7 @@ site:"anymeeting.com"
 ```
 $ sort -u domain_list.txt -o domain_list.txt
 ```
+## Js file analyze amnual:
+```
+"/, aws, algolia, s3.
+``
