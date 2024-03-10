@@ -15,7 +15,7 @@ https://www.virustotal.com
 
 ## Archive
 1. https://web.archive.org/cdx/search/cdx?url=*.domain.com&fl=original&collapse=urlkey
-2. curl "https://web.archive.org/cdx/search/cdx?url=*.anymeeting.com&fl=original&collapse=urlkey" | tee archive.txt
+2. $ curl "https://web.archive.org/cdx/search/cdx?url=*.anymeeting.com&fl=original&collapse=urlkey" | tee archive.txt
 ```
 
 ### Take subdomains from Crt.sh, Shodan.io, Virus Total and make a file and Remove the duplicates Subdomains:
