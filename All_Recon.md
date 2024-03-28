@@ -4,10 +4,8 @@
 ### Passive Subdomains
 ```
 ## Crt.sh
-```
 https://crt.sh/?q=domain.com
-curl -s https://crt.sh/\?q\=\google.com\&output\=json | jq -r '.[].name_value' | grep -Po '(\w+\.\w+\.\w+)$'
-```
+$ curl -s https://crt.sh/\?q\=\google.com\&output\=json | jq -r '.[].name_value' | grep -Po '(\w+\.\w+\.\w+)$'
 
 ## Virus Total
 https://www.virustotal.com
