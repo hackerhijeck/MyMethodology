@@ -133,3 +133,15 @@ $ python3 photon.py -u domain.com — keys — dns
 ## References:
 https://medium.com/@theUnixe/recon-for-web-pen-testing-6a6333673818
 
+
+
+
+
+
+
+
+# For Grep command use to find strinf under the file or folder:
+```
+$ grep -inR "api_key"
+$ grep -inR "user" --exclude='*.dex' --exclude='*.so'
+```
