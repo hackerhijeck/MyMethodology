@@ -7,6 +7,9 @@ https://web.archive.org/cdx/search/cdx?url=*.domain.com&fl=original&collapse=url
 
 Using CURL
 $ curl -v -X POST 'https://web.archive.org/cdx/search/cdx?url=*.domain.com&fl=original&collapse=urlkey' | grep "http" | tee OutputWeb.txt
+
+New:
+$ curl -G -v "https://web.archive.org/cdx/search/cdx" --data-urlencode "url=*.domain.com" --data-urlencode "fl=original" --data-urlencode "collapse=urlkey" | grep "http" | tee OutputWeb.txt
 ```
 ## Use Waybackurls by tomnomnom:
 ```
