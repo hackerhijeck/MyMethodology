@@ -11,6 +11,13 @@ $ curl -v -X POST 'https://web.archive.org/cdx/search/cdx?url=*.domain.com&fl=or
 New:
 $ curl -G -v "https://web.archive.org/cdx/search/cdx" --data-urlencode "url=*.domain.com" --data-urlencode "fl=original" --data-urlencode "collapse=urlkey" | grep "http" | tee OutputWeb.txt
 ```
+
+## Important:
+```
+gospider -s "https://example.com" --depth 3 --no-redirect -t 50 -o out
+
+grep "\[code-200\]" file.txt | awk -F' - ' '{print $3}' > urls_code_200.txt 
+```
 ## Use Waybackurls by tomnomnom:
 ```
 $ waybackurls domain.com | tee waybackurls.txt
